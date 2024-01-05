@@ -1,0 +1,19 @@
+{% extends 'base.html' %} {% block content %}
+<div class="container mt-5">
+  <h3>Translation Result</h3>
+  <p>Text: {{ translation.text }}</p>
+  <p>Translated Text: {{ translation.translated_text }}</p>
+  {% if translation.pdf_file %}
+  <p>
+    PDF File:
+    <a href="{{ translation.pdf_file.url }}">{{ translation.pdf_file.name }}</a>
+  </p>
+  {% endif %}
+  <p>
+    Audio File:
+    <a href="{{ translation.audio_file.url }}"
+      >{{ translation.audio_file.name }}</a
+    >
+  </p>
+</div>
+{% endblock %}
