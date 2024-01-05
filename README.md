@@ -24,3 +24,6 @@ Start the development server:
 ```bash
 python manage.py runserver
 ```
+Or
+
+Click on Run_project.bat he will take care of installing the dependencies & the env
